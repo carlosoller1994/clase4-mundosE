@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto:</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Formulario de Contacto:</h1>
+            <form method="post" action="">
+
+                <label for="nombre">Ingrese su nombre:</label>
+                <input required type="text" placeholder="Solamente el nombre" id="nombre">
+                <br><br>
+
+                <label for="mail">Ingrese su email:</label>
+                <input required type="email" placeholder="Ingrese su email" id="mail">
+                <br><br>
+
+                <label for="comoLlego">Como conocio nuestra pagina?</label>
+                <select name="role" id="comoLlego">
+                    <option value="developer">Redes Sociales</option>
+                    <option value="projectManager">Me conto un amigo</option>
+                    <option value="recruiter">Otros</option>
+                </select>
+                <br><br>
+
+                <fieldset>
+                    <legend>Preferencia de horario de contacto:</legend>
+
+                    <label for="maniana">Maniana</label>
+                    <input type="radio" id="maniana" name="horario" value="maniana">
+
+                    <label for="tarde">Tarde</label>
+                    <input type="radio" id="tarde" name="horario" value="tarde">
+
+                    <label for="noche">Noche</label>
+                    <input type="radio" id="noche" name="horario" value="noche">
+                </fieldset>
+                <br><br>
+
+                <label for="numeroContacto">Numero Contacto:</label>
+                <input type="number" id="numeroContacto" max="99999999999">
+                <br><br>
+
+                <label for="detalle">Ingrese el problema ocurrido:</label>
+                <textarea name="texto" id="detalle" placeholder="Ingrese su problema">
+                </textarea>
+                <br><br>
+
+                <label for="fechaReclamo">Fecha problema:</label>
+                <input type="date" id="fechaReclamo" name="trip-start"
+                value="2022-05-04"
+                min="2022-01-01" max="2022-05-04">
+                <br><br>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
